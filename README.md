@@ -6,20 +6,32 @@ Find your street address with CoreLocation! (Found is a bit of glue between [eva
 
 Add this line to your application's Gemfile:
 
-    gem 'found'
+`gem 'found'`
 
 And then execute:
 
-    $ bundle
+`$ bundle`
 
 Or install it yourself as:
 
-    $ gem install found
+`$ gem install found`
 
 ## Usage
 
+Command line:
+
 ```
 $ found
+
+Rugged Trail, Topanga Canyon, CA 90290, USA
+```
+
+As a library:
+
+```ruby
+require 'found'
+
+puts Found.address
 ```
 
 ## Contributing
