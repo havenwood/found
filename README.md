@@ -12,19 +12,20 @@ gem 'found'
 
 And then execute:
 
-  $ bundle
+`$ bundle`
 
 Or install it yourself as:
 
-  $ gem install found
+`$ gem install found`
 
 ## Usage
 
 Command line:
 
-  $ found
-  Rugged Trail, Topanga Canyon, CA 90290, USA
-
+```
+$ found
+Rugged Trail, Topanga Canyon, CA 90290, USA
+```
 As a library:
 
 ```ruby
