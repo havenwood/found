@@ -3,11 +3,11 @@ require 'lost'
 require 'geokit'
 
 module Found
-  class << self
-    def address
-      include Geokit::Geocoders
-      
-      puts GoogleGeocoder.reverse_geocode(Lost.current_position).full_address
-    end
+  def self.address
+    include Geokit::Geocoders
+    
+    addy = GoogleGeocoder.reverse_geocode(Lost.current_position)
+
+    puts addy.full_address
   end
 end
