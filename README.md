@@ -1,6 +1,6 @@
 # Found
 
-Find your street address with CoreLocation! (Found is a bit of glue between [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) for lat/long along with [Geokit](http://geokit.rubyforge.org) and Google for the street address.)
+Find your street address with CoreLocation! ([Found](https://github.com/Havenwood/found) is a bit of glue between [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) for lat/long along with [Geokit](http://geokit.rubyforge.org) and Google for the street address.)
 
 ## Installation
 
