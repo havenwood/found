@@ -1,22 +1,16 @@
 # Found
 
-Find your street address with CoreLocation! (Found is a bit of glue between [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) for lat/long along with [Geokit](http://geokit.rubyforge.org) and Google for the street address.)
+Find the nearest street address with OS X's CoreLocation! ([Found](https://github.com/havenwood/found) is a bit of glue between [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) to determine latitude and longitude along with [Geokit](http://geokit.rubyforge.org) for the street address.)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'found'
-```
-
-And then execute:
-
-  $ bundle
-
-Or install it yourself as:
+Command line:
 
   $ gem install found
+
+Library:
+
+  `require 'found`
 
 ## Usage
 
@@ -25,19 +19,26 @@ Command line:
   $ found
   Rugged Trail, Topanga Canyon, CA 90290, USA
 
-As a library:
+  Similar to Lost, nearest address instead of lat/long:
+
+  $ lost
+  [34.10416324080013, -118.59267817253203]
+
+Library:
 
 ```ruby
-require 'found'
-
-puts Found.address 
-
+Found.address
 # => Rugged Trail, Topanga Canyon, CA 90290, USA
 ```
+
+## Requirements
+
+- OS X (Lost uses CoreLocation)
+- Command Line Developer Tools (Compile Lost)
+- Wifi (CoreLocation)
 
 ## Contributing
 
 1. Fork it
 2. Commit Changes
 3. Create a Pull Request
-=======
