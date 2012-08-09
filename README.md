@@ -21,7 +21,7 @@ $ found
 Rugged Trail, Topanga Canyon, CA 90290, USA
 ```
 
-Lost command line:
+[Lost](https://github.com/evanphx/lost) command line:
 
 ```
 $ lost
