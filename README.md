@@ -19,9 +19,11 @@ Command line:
 ```
 $ found
 Rugged Trail, Topanga Canyon, CA 90290, USA
+```
 
-Compare to Lost gem:
+Lost command line:
 
+```
 $ lost
 [34.10416324080013, -118.59267817253203]
 ```
