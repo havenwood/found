@@ -6,7 +6,7 @@ Find the nearest street address with OS X's CoreLocation! ([Found](https://githu
 
 Command line:
 
-  $ gem install found
+  `$ gem install found`
 
 Library:
 
@@ -16,6 +16,7 @@ Library:
 
 Command line:
 
+  ```
   $ found
   Rugged Trail, Topanga Canyon, CA 90290, USA
 
@@ -23,6 +24,7 @@ Command line:
 
   $ lost
   [34.10416324080013, -118.59267817253203]
+  ```
 
 Library:
 
