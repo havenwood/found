@@ -6,8 +6,14 @@ module Found
   def self.address
     include Geokit::Geocoders
     
-    addy = GoogleGeocoder.reverse_geocode(Lost.current_position)
+    begin
+      current_position = Lost.current_position
 
-    puts addy.full_address
+      current_address = GoogleGeocoder.reverse_geocode(current_position)
+
+      puts current_address.full_address
+    rescue SocketError
+      puts 'WiFi connection required to determine location.'
+    end
   end
 end
