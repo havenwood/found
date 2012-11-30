@@ -2,7 +2,7 @@
 require File.expand_path('../lib/found/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ['Havenwood']
+  gem.authors       = ['Shannon Skipper']
   gem.email         = ['shannonskipper@gmail.com']
   gem.description   = %q{Find Street Address with CoreLocation}
   gem.summary       = %q{Find your street address with CoreLocation! (Found is a bit of glue between evanphx's awesome Lost gem for lat/long along with Geokit and Google for the street address.)}
