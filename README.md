@@ -1,6 +1,6 @@
 # Found
 
-Find the nearest street address with OS X's CoreLocation! ([Found](https://github.com/havenwood/found) is a bit of glue between [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) to determine latitude and longitude along with [Geokit](http://geokit.rubyforge.org) for the street address.)
+Find the nearest street address with OS X's CoreLocation! ([Found](https://github.com/havenwood/found) is a tiny wrapper around [evanphx](https://github.com/evanphx)'s awesome [Lost gem](https://github.com/evanphx/lost) to determine latitude and longitude along with [Geokit](http://geokit.rubyforge.org) for the street address.)
 
 ## Installation
 
@@ -10,7 +10,7 @@ Command line:
 
 Library:
 
-`require 'found`
+`require 'found'`
 
 ## Usage
 
