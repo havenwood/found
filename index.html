@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Found by Havenwood</title>
+    <title>Found by havenwood</title>
   </head>
 
   <body>
@@ -19,70 +19,74 @@
 
         <header>
           <h1>Found</h1>
-          <h2>A Gem for Finding the Nearest Address using OS X's CoreLocation</h2>
+          <h2>Find the nearest street address from the Terminal on OS X.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/Havenwood/found/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/Havenwood/found/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/Havenwood/found" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          <a href="https://github.com/havenwood/found/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/havenwood/found/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/havenwood/found" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
         <hr>
 
         <section id="main_content">
-          <h1>Found</h1>
+          <h1>
+<a name="found" class="anchor" href="#found"><span class="octicon octicon-link"></span></a>Found</h1>
 
-<p>Find the nearest street address with OS X's CoreLocation! (<a href="https://github.com/havenwood/found">Found</a> is a bit of glue between <a href="https://github.com/evanphx">evanphx</a>'s awesome <a href="https://github.com/evanphx/lost">Lost gem</a> to determine latitude and longitude along with <a href="http://geokit.rubyforge.org">Geokit</a> for the street address.)</p>
+<p>Find the nearest street address from the Terminal!</p>
 
-<h2>Installation</h2>
+<p><a href="https://github.com/havenwood/found">Found</a> is a tiny wrapper around <a href="https://github.com/evanphx">evanphx</a>'s awesome <a href="https://github.com/evanphx/lost">lost gem</a> and <a href="http://geokit.rubyforge.org">Geokit</a>, allowing you to find your latitude and longitude with OS X's CoreLocation then fetch the street address from Google.</p>
 
-<p>Command line:</p>
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>From the Terminal:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>lost
+<span class="o">[</span>34.10416324080013, -118.59267817253203<span class="o">]</span>
+
+<span class="nv">$ </span>found
+Rugged Trail, Topanga Canyon, CA 90290, USA
+</pre></div>
+
+<p>Or from irb or Pry:</p>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'found'</span>
+
+<span class="no">Lost</span><span class="o">.</span><span class="n">current_position</span>
+<span class="c1">#=&gt; [34.10416324080013, -118.59267817253203]</span>
+
+<span class="no">Found</span><span class="o">.</span><span class="n">address</span>
+<span class="c1">#=&gt; Rugged Trail, Topanga Canyon, CA 90290, USA</span>
+</pre></div>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p><code>$ gem install found</code></p>
 
-<p>Library:</p>
-
-<p><code>require 'found</code></p>
-
-<h2>Usage</h2>
-
-<p>Command line:</p>
-
-<pre><code>$ found
-Rugged Trail, Topanga Canyon, CA 90290, USA
-</code></pre>
-
-<p><a href="https://github.com/evanphx/lost">Lost</a> command line:</p>
-
-<pre><code>$ lost
-[34.10416324080013, -118.59267817253203]
-</code></pre>
-
-<p>Library:</p>
-
-<div class="highlight"><pre><span class="no">Found</span><span class="o">.</span><span class="n">address</span>
-<span class="c1"># =&gt; Rugged Trail, Topanga Canyon, CA 90290, USA</span>
-</pre></div>
-
-<h2>Requirements</h2>
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
-<li>OS X (Lost uses CoreLocation)</li>
-<li>Command Line Developer Tools (Compile Lost)</li>
-<li>Wifi (CoreLocation)</li>
-</ul><h2>Contributing</h2>
+<li>OS X</li>
+<li>Xcode to compile <code>lost</code> c-extensions</li>
+<li>A Wifi connection</li>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
 <ol>
 <li>Fork it</li>
 <li>Commit Changes</li>
-<li>Create a Pull Request</li>
+<li>Pull Request</li>
+<li><img class="emoji" title=":cake:" alt=":cake:" src="https://a248.e.akamai.net/assets.github.com/images/icons/emoji/cake.png" height="20" width="20" align="absmiddle"></li>
 </ol>
         </section>
 
         <footer>
-          Found is maintained by <a href="https://github.com/Havenwood">Havenwood</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+          Found is maintained by <a href="https://github.com/havenwood">havenwood</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
         </footer>
 
         
