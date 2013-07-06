@@ -5,7 +5,7 @@ Find the nearest street address from the Terminal!
 
 ## Usage
 From the Terminal:
-```
+```bash
 $ found
 Rugged Trail, Topanga Canyon, CA 90290, USA
 
@@ -17,9 +17,9 @@ Or from irb or Pry:
 require 'found'
 
 Lost.current_position
-# => [34.10416324080013, -118.59267817253203]
+#=> [34.10416324080013, -118.59267817253203]
 Found.address
-# => Rugged Trail, Topanga Canyon, CA 90290, USA
+#=> Rugged Trail, Topanga Canyon, CA 90290, USA
 ```
 
 ## Installation
@@ -27,11 +27,11 @@ Found.address
 
 ## Requirements
 - OS X
-- Xcode to compile `lost` C-extensions
-- Wifi (CoreLocation)
+- Xcode to compile `lost` c-extensions
+- A Wifi connection
 
 ## Contributing
 1. Fork it
 2. Commit Changes
-3. Create a Pull Request
+3. Pull Request
 4. :cake:
